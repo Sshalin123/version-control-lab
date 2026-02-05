@@ -1,0 +1,14 @@
+JIRA Integration Test
+=====================
+
+This file tests the GitHub-JIRA integration.
+
+If you can see this commit in JIRA issue DMOPS-1, the integration is working!
+
+Test Details:
+- Repository: DMOPS-PROJECT
+- Branch: DMOPS-1-test-jira-integration
+- Commit should appear in JIRA Development panel
+- Date: 2026-02-05
+
+Integration Status: Testing
