@@ -1,0 +1,232 @@
+# DevOps Project - Git Ignore Rules
+
+# ============================================
+# SECURITY - Never commit sensitive data
+# ============================================
+
+# JIRA and GitHub credentials
+*.token
+*.pat
+.jira-credentials
+.github-credentials
+oauth-credentials.txt
+client-secrets.json
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.production
+
+# API Keys and Secrets
+secrets.yml
+secrets.json
+api-keys.txt
+*.key
+*.pem
+*.p12
+
+# ============================================
+# IDE and Editor Files
+# ============================================
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+.history/
+
+# JetBrains IDEs (WebStorm, IntelliJ, etc.)
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ============================================
+# Operating System Files
+# ============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ============================================
+# Temporary and Cache Files
+# ============================================
+
+# Node modules (if using Node.js in future)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+
+# Python cache (if using Python in future)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# General cache
+*.cache
+.cache/
+.temp/
+.tmp/
+temp/
+tmp/
+
+# ============================================
+# Build and Distribution
+# ============================================
+
+# Build outputs
+dist/
+build/
+out/
+*.min.js
+*.min.css
+
+# Compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Archives
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# ============================================
+# Logs
+# ============================================
+
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# ============================================
+# Testing
+# ============================================
+
+# Coverage reports
+coverage/
+*.lcov
+.nyc_output
+
+# Test results
+.test/
+test-results/
+*.test.js.snap
+
+# ============================================
+# Documentation (Generated)
+# ============================================
+
+# Generated docs (keep source docs)
+docs/_build/
+site/
+
+# ============================================
+# Project Specific
+# ============================================
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# Draft/WIP files
+*-draft.*
+*-wip.*
+scratch/
+
+# Local configuration
+local-config.json
+.local/
+
+# Database files (if any in future)
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================
+# CI/CD (Future use)
+# ============================================
+
+# GitHub Actions artifacts
+.github/workflows/artifacts/
+
+# Deploy keys
+deploy_key
+deploy_key.pub
+
+# ============================================
+# END OF GITIGNORE
+# ============================================
+
+# NOTE: This file helps protect sensitive information
+# Always review before committing credentials or keys
+# For JIRA integration: credentials should be stored in
+# JIRA console, not in repository files
