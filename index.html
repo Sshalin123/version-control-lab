@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DevOps Project - Home</title>
   <style>
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -88,6 +94,11 @@
       font-weight: 700;
       margin-bottom: 1.5rem;
       letter-spacing: -0.02em;
+      background: linear-gradient(90deg, #fff, #888, #fff);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradient 3s ease infinite;
     }
 
     .hero p {
@@ -99,19 +110,20 @@
 
     .cta-button {
       display: inline-block;
-      background-color: #fff;
-      color: #000;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
       padding: 1rem 2.5rem;
       text-decoration: none;
       font-weight: 600;
       border-radius: 6px;
       transition: all 0.3s ease;
-      border: 2px solid #fff;
+      border: none;
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
     }
 
     .cta-button:hover {
-      background-color: #000;
-      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
     }
 
     /* Features Section */
